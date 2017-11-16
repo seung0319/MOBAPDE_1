@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b897d"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="11dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/editPassWord"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="11dp"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number: "
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="11dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="73dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail: "
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="11dp"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/backRegisterBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#ff9800"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#ff9800"
+            android:text="Sign Up"
+            android:onClick="signup"
+            android:id="@+id/signUp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

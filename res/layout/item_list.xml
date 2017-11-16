@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/itemContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Sale"
+        android:textColor="#63a417"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/itemPic"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P100,000"
+            android:textSize="18sp"
+            android:textColor="#63a417"
+            android:layout_alignTop="@id/itemPic"
+            android:layout_marginTop="130dp"/>
+
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_alignParentEnd="true"
+            android:text="Title of the Item "
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/subtitleItem"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="General Information of the Item"
+            android:textColor="#757575"
+            android:textSize="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:ellipsize="end"
+            android:maxLines="5"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
